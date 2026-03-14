@@ -1,0 +1,14 @@
+# Web Framework
+fastapi>=0.100.0
+uvicorn>=0.23.0
+
+# Stock Data
+yfinance>=0.2.30
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+
+# Optional: Remote Access
+# cloudflared (install separately via brew or binary)

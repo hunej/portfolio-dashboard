@@ -1,0 +1,119 @@
+{
+  "nodes": [
+    {
+      "id": "AAPL",
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "gicsSector": "Information Technology",
+      "gicsIndustry": "Technology Hardware, Storage & Peripherals",
+      "rating": "HOLDING",
+      "note": {
+        "thesis": "iPhone + Services 生態系，定價權強，長期 FCF 穩定。\n\n【催化劑】\n- Services 營收佔比持續提升，margin 結構改善\n- AI 功能整合至 iPhone/Mac\n\n【風險】\n- iPhone 單品依賴度仍高\n- 中國市場面臨華為競爭",
+        "tags": ["big-tech", "hardware", "services"]
+      },
+      "createdAt": "2026-02-28T01:00:00Z",
+      "updatedAt": "2026-03-02T11:45:30Z"
+    },
+    {
+      "id": "MSFT",
+      "ticker": "MSFT",
+      "name": "Microsoft Corporation",
+      "gicsSector": "Information Technology",
+      "gicsIndustry": "Software",
+      "rating": "HOLDING",
+      "note": {
+        "thesis": "雲端 + AI 雙引擎驅動成長。\n\n【催化劑】\n- Azure 市佔持續擴大\n- Copilot 變現逐步顯現\n- Gaming 部門整合 Activision\n\n【風險】\n- AI 投資回報不確定性\n- 監管壓力",
+        "tags": ["big-tech", "cloud", "ai", "saas"]
+      },
+      "createdAt": "2026-02-28T01:00:00Z",
+      "updatedAt": "2026-03-02T11:45:30Z"
+    },
+    {
+      "id": "TSM",
+      "ticker": "TSM",
+      "name": "Taiwan Semiconductor Manufacturing",
+      "gicsSector": "Information Technology",
+      "gicsIndustry": "Semiconductors & Semiconductor Equipment",
+      "rating": "WATCH",
+      "note": {
+        "thesis": "全球晶圓代工龍頭，技術領先優勢明顯。\n\n【催化劑】\n- AI 晶片需求爆發（N3/N2 製程）\n- 美國/日本廠產能開出\n\n【風險】\n- 地緣政治風險\n- 資本支出壓力",
+        "tags": ["semiconductor", "ai", "foundry"]
+      },
+      "createdAt": "2026-03-01T10:00:00Z",
+      "updatedAt": "2026-03-01T10:00:00Z"
+    },
+    {
+      "id": "NVDA",
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
+      "gicsSector": "Information Technology",
+      "gicsIndustry": "Semiconductors & Semiconductor Equipment",
+      "rating": "WATCH",
+      "note": {
+        "thesis": "AI 訓練與推論晶片絕對龍頭。\n\n【催化劑】\n- 資料中心需求持續強勁\n- Blackwell 架構推出\n\n【風險】\n- 估值偏高\n- 客戶自研晶片威脅",
+        "tags": ["semiconductor", "ai", "datacenter"]
+      },
+      "createdAt": "2026-03-01T10:00:00Z",
+      "updatedAt": "2026-03-01T10:00:00Z"
+    },
+    {
+      "id": "COST",
+      "ticker": "COST",
+      "name": "Costco Wholesale Corporation",
+      "gicsSector": "Consumer Staples",
+      "gicsIndustry": "Consumer Staples Distribution & Retail",
+      "rating": "BUY",
+      "note": {
+        "thesis": "會員制零售龍頭，定價權強，抗通膨。\n\n【催化劑】\n- 會員費調漲週期\n- 國際展店持續\n\n【風險】\n- 估值長期偏高\n- 電商競爭",
+        "tags": ["retail", "defensive", "membership"]
+      },
+      "createdAt": "2026-03-01T10:00:00Z",
+      "updatedAt": "2026-03-01T10:00:00Z"
+    },
+    {
+      "id": "XOM",
+      "ticker": "XOM",
+      "name": "Exxon Mobil Corporation",
+      "gicsSector": "Energy",
+      "gicsIndustry": "Oil, Gas & Consumable Fuels",
+      "rating": "AVOID",
+      "note": {
+        "thesis": "傳統能源龍頭，但長期面臨能源轉型壓力。\n\n【觀察點】\n- 油價走勢\n- 併購整合效益\n\n【風險】\n- ESG 壓力\n- 長期需求下滑",
+        "tags": ["energy", "oil", "dividend"]
+      },
+      "createdAt": "2026-03-01T10:00:00Z",
+      "updatedAt": "2026-03-01T10:00:00Z"
+    }
+  ],
+  "links": [
+    {
+      "id": 1,
+      "source": "AAPL",
+      "target": "TSM",
+      "relation": "supply_chain",
+      "comment": "台積電是蘋果主要晶片代工廠（A 系列、M 系列）"
+    },
+    {
+      "id": 2,
+      "source": "NVDA",
+      "target": "TSM",
+      "relation": "supply_chain",
+      "comment": "台積電代工 NVIDIA 全系列 GPU"
+    },
+    {
+      "id": 3,
+      "source": "AAPL",
+      "target": "MSFT",
+      "relation": "peer",
+      "comment": "Big Tech 同業，競爭 PC/平板/雲端市場"
+    },
+    {
+      "id": 4,
+      "source": "NVDA",
+      "target": "MSFT",
+      "relation": "supply_chain",
+      "comment": "微軟 Azure 是 NVIDIA GPU 主要採購客戶"
+    }
+  ],
+  "_linkIdCounter": 4
+}

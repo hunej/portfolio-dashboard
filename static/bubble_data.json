@@ -1,0 +1,44 @@
+{
+  "bubbles": [
+    {
+      "id": 1,
+      "label": "Bubble 1",
+      "value": 30,
+      "x": 10,
+      "y": 20,
+      "color": "#ff0000"
+    },
+    {
+      "id": 2,
+      "label": "Bubble 2",
+      "value": 50,
+      "x": 15,
+      "y": 25,
+      "color": "#00ff00"
+    },
+    {
+      "id": 3,
+      "label": "Bubble 3",
+      "value": 70,
+      "x": 20,
+      "y": 30,
+      "color": "#0000ff"
+    },
+    {
+      "id": 4,
+      "label": "Bubble 4",
+      "value": 90,
+      "x": 25,
+      "y": 35,
+      "color": "#ffff00"
+    },
+    {
+      "id": 5,
+      "label": "Bubble 5",
+      "value": 110,
+      "x": 30,
+      "y": 40,
+      "color": "#ff00ff"
+    }
+  ]
+}
