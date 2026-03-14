@@ -3,9 +3,7 @@
 一個視覺化股票投資組合管理工具，支援：
 - **📋 List View**：管理股票清單、撰寫投資論述、建立股票間關聯
 - **🫧 Bubble Map**：以氣泡圖呈現持股，氣泡大小 = 市值，位置 = 股價相關性
-
-![Dashboard Preview](https://via.placeholder.com/800x400?text=Dashboard+Screenshot)
-
+- 
 ---
 
 ## 🚀 快速開始
